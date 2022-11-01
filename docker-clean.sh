@@ -7,6 +7,14 @@ done
 brew uninstall --force docker
 brew uninstall --cask --force docker
 brew cleanup
+sudo rm /usr/local/var/homebrew/linked/docker
+sudo rm /usr/local/var/homebrew/locks/docker-machine.brewing
+sudo rm /usr/local/var/homebrew/locks/docker.brewing
+sudo rm -r /usr/local/Caskroom/docker
+sudo rm -r /usr/local/Cellar/docker
+sudo rm -r /usr/local/Homebrew/Library/Locks/docker.brewing
+sudo rm -r /opt/homebrew/Caskroom/docker
+sudo rm -r /opt/homebrew/Cellar/docker
 
 # system folders
 sudo rm -r /var/lib/docker
@@ -22,12 +30,6 @@ sudo rm /usr/local/bin/docker
 sudo rm /usr/local/bin/docker-compose
 sudo rm /usr/local/bin/docker-machine
 sudo rm /usr/local/opt/docker
-sudo rm /usr/local/var/homebrew/linked/docker
-sudo rm /usr/local/var/homebrew/locks/docker-machine.brewing
-sudo rm /usr/local/var/homebrew/locks/docker.brewing
-sudo rm -r /usr/local/Caskroom/docker
-sudo rm -r /usr/local/Cellar/docker
-sudo rm -r /usr/local/Homebrew/Library/Locks/docker.brewing
 
 # Applications and Library
 sudo rm -r /Applications/Docker.app
